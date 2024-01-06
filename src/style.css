@@ -1,18 +1,19 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
+  
   *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
   }
 
   html{
-      font-size: 62.5%;
-
-  }
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
 
   :root{
-    background-color: antiquewhite;
+    background-color: rgb(245, 237, 227);
     box-shadow:  0 0 1.5rem rgba(0 0 0 / 0.1);
   }
 
@@ -24,60 +25,213 @@ body{
   ul{
     list-style: none;
   }
-
+ 
   a{
     text-decoration: none;
     color: #000;
     transition: color 0.3s ease-in-out;
   }
 
- 
-  
+  a:hover,
+  a.active{
+    color: var(yellow);
+  }
+
   .container{
-    margin-inline: auto;
+    max-width: 1170px;
     padding: 0 1.5rem;
-    max-width: 1400px;
+    margin-inline: auto;
   }
 
   nav{
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     padding: 1.5rem 0;
-    background-color: greenyellow;
+    background-color: rgb(180, 212, 255);
     box-shadow: var(box-shadow);
   }
 
   nav .container .row{
-    display: flex;
+    display:flexbox;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
- nav .container .row .logo{
+  nav .container .row .logo{
     font-size: 4rem;
-    /*justify-content: left;*/
+    font-weight: bolder;
   }
 
   nav .container .row .menu-bar{
     display:flex;
     align-items: center;
     gap: 3rem;
-   /* justify-content: right;*/
+    font-weight: bold;
  }
 
   nav .container .row .menu-bar li a{
-    text-transform:capitalize;
-    font-size: 1.8rem;
-    /*margin-left: 20px;*/
-  }
+  text-transform:capitalize;
+  font-size: 2rem;
+ }
 
-  section{
-    padding: 12rem 0;
-    text-align: center;
-    font-size: 5rem;
-  }
+ section{
+  padding: 20rem 10rem;
+  text-transform: none;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  color: red;
+}
+
+.hero .grid1{
+  justify-content: space-between;
+  font-size: 5rem;
+}
+
+h1{
+  font-weight: bolder;
+}
+
+h2{
+  font-weight: bold;
+}
+
+
+#hero{
+  background-color: rgb(238, 245, 255);
+  font-size: 3rem;
+}
+
+#about{
+  background-color: rgb(238, 245, 255) ;
+  font-size: 3rem;
+}
+
+#experience{
+  background-color: rgb(238, 245, 255);
+}
+
+#projects{
+  background-color: rgb(238, 245, 255);
+}
+
+#contact{
+  background-color: rgb(238, 245, 255);
+}
+
+/*Card Styling*/
+.card-container{
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 15px -5px;
+  transition: 0.2s;
+  animation: ease-in-out;
+}
+
+.card-container:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 15px -5px;
+}
+
+.image-container img{
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-content{
+  margin: 1rem;
+  margin-top: 0.2rem;
+ 
+}
+
+h3,p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-title{
+  margin-bottom: 0 0.5rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/*Project Styling*/
+
+.projects .cardImg{
+
+  max-width: fit-content;
+  height: auto;
+
+}
+
+/*Contact styling*/
+form
+{
+  display: block;
+  background-color: rgb(238, 245, 255);
+  box-shadow: rgb(185, 185, 216);
+  margin: 40px auto;
+  max-width: 600px;
+  max-height: 700px;
+  padding: 20px 40px; 
+}
+
+  form input, textarea 
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px auto;
+  padding: 8px;
+  font-family: "Poppins";
+  background-color: rgb(192, 214, 234);
+  border: 1px solid rgb(118, 170, 216);
+}
+
+form span
+{
+  color: rgb(92, 105, 231);
+}
+
+form h1
+{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+font button
+{
+  height: 30px;
+  width: 80px;
+  align-items: center;
+  border: none;
+  background-color: rgb(29, 185, 237);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+ h1{
+  align-items: center;
+}
+
+input {
+  font-size: 1.5rem;
+  
+}
+
+textarea{
+  font-size: 1.5rem;
+}
+ 
 
 
 
